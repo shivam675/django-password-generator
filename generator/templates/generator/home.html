@@ -1,0 +1,28 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+<div class="container text-center" >
+<h1>This is Home</h1>
+
+<form action="{% url 'password' %}">
+	<select name='length'>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8" selected="selected">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select> Length of Password You Want
+	<br>
+	<input type="checkbox" name="uppercase"><b> Uppercase</b>
+	<br>
+	<input type="checkbox" name="numbers"><b> Numeric</b>
+	<br>
+	<input type="checkbox" name="special"><b> Special Characters</b>
+	<br>
+	<input type="submit" value="Generate password" class="btn btn-primary">
+	<br>
+<!--a href="{% url 'about' %}"> Go to About Page</a-->
+
+</form>
+
+</div>
